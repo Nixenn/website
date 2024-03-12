@@ -1,0 +1,155 @@
+body {
+  background-color: black
+}
+
+p {
+    color: white;
+    font-family: "Roboto", sans-serif;
+  }
+
+h1 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+h2 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+h3 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  }
+
+a {
+  color: rgb(70, 190, 122);
+  font-family: "Arial";
+  font-size: 20;
+}
+
+.btn btn-info {
+  z-index: 5;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Polygon background */
+
+body {
+  background: #000;
+}
+.wrap {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+@keyframes rotate360 {
+  0% {
+    transform: rotate( 0deg ) scale( 1 );
+  }
+  
+  100% {
+    transform: rotate( 360deg ) scale( 1.5 );
+  }
+}
+
+@keyframes rotate180 {
+  0% {
+    transform: rotate( 0deg ) scale( 1.25 );
+  }
+    
+  100% {
+    transform: rotate( 180deg ) skewX( 1 );
+  }
+}
+@keyframes rotate90 {
+  0% {
+    transform: rotate( 0deg ) scale( 1 );
+  }
+    
+  100% {
+    transform: rotate( 90deg ) scale( 1.5 );
+  }
+}
+
+polygon {
+  fill: white;
+  opacity: 0.05;
+  transform-origin: center center;
+  backface-visibility: hidden;
+  animation: rotate360 30s linear infinite alternate-reverse;
+  z-index: 0;
+  
+  &:nth-child(2n) {
+    animation-name: rotate180;
+    animation-duration: 15s;
+    animation-direction: alternate;
+  }
+  
+  &:nth-child(3n) {
+    animation-name: rotate90;
+    animation-duration: 10s;
+  }
+  
+  &:nth-child(5n) {
+    animation-duration: 30s;
+    animation-direction: alternate-reverse;
+  }
+}
+
+/* Banner */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* (Just ignore)top banner style */
+.top-banner {
+  margin-bottom: 30px;
+  text-align: center;
+  background-color: rgb(52, 43, 83);
+  z-index: 1;
+}
+
+.top-banner a, .top-banner span {
+  display: inline-block;
+}
+
+.top-banner a {
+  width: 100%;
+  padding: 15px 0;
+  text-decoration: none;
+  font-weight: 500;
+  color: #fff;
+  color: rgba(255, 255, 255, .8);
+}
+
+.top-banner span{
+  width: 50px;
+  height: 28px;
+  line-height: 28px;
+  background-color: #3b7874;
+  border-radius: 20px;
+}
+
+.top-banner a:hover {
+  color: #fff9e0;
+}
