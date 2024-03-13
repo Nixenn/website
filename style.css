@@ -39,6 +39,19 @@ a {
   font-style: normal;
 }
 
+/* These next 3 classes are used to put multiple text elements on one line, say for black ink spots for classified text. */
+
+.inp {
+  display: inline-block;
+}
+
+.indiv div {
+  display: inline-block;
+}
+
+.blackink {
+  background-color: white; width:auto; display: inline-block;
+}
 /* Polygon background */
 
 body {
