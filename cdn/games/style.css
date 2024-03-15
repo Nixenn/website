@@ -44,22 +44,7 @@ a {
   font-style: normal;
 }
 
-/* These next 3 classes are used for specific cases, say for black ink spots for classified text or a center div. */
-
-.box-div {
-  width: 600px;
-  margin: 3em auto;
-  padding: 2em;
-  background-color: #2424247e;
-  border-radius: 0.5em;
-  box-shadow: 2px 3px 7px 2px  rgba(0,0,0,0.02);
-}
-
-.center-div {
-  width: auto;
-  height: auto;
-  margin: 0em auto;
-}
+/* These next 3 classes are used to put multiple text elements on one line, say for black ink spots for classified text. */
 
 .inp {
   display: inline-block;
